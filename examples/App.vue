@@ -1,18 +1,11 @@
 <template>
-  <div style="height:100%">
-    <el-container style="height:100%">
-      <el-header height="40">
-        <header-model></header-model>
-      </el-header>
-      <el-container>
-        <el-aside width="200px">
-          <menu-model></menu-model>
-        </el-aside>
-        <el-main>
-          <router-view></router-view>
-        </el-main>
-      </el-container>
-    </el-container>
+  <div id="demo-total">
+    <header><header-model /></header>
+    <section class="section-total">
+      <nav class="nav-menu"><menu-model /></nav>
+      <div class="line"></div>
+      <section class="container" :style="{minHeight: `${minHeight}px`}"><router-view /></section>
+    </section>
   </div>
 </template>
 <script>
@@ -24,12 +17,39 @@ export default {
     MenuModel
   },
   data() {
-    return {};
+    return {
+      minHeight: 100,
+    };
+  },
+  mounted() {
+    this.minHeight = window.innerHeight - 80;
   },
   methods: {}
 };
 </script>
 <style>
 /* 引入代码高亮样式 */
-@import '~highlight.js/styles/color-brewer.css';
+@import "~highlight.js/styles/color-brewer.css";
+.section-total {
+  position: relative;
+}
+.nav-menu {
+  display: inline-block;
+  width: 200px;
+  vertical-align: top;
+}
+.container {
+  display: inline-block;
+  width: calc(100% - 201px);
+  box-sizing: border-box;
+  padding-left: 30px;
+}
+.line {
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  background: #dcdfe6;
+  left: 200px;
+}
 </style>

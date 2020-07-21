@@ -1,21 +1,17 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-// 引入element-ui
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import './style/index.scss';
 import demoBlock from './components/demo-block'
 import hljs from 'highlight.js';
-import '../packages/theme-chalk/src/button.scss';
+import '../packages/theme-chalk/src/supple-button.scss';
 // 导入组件库
-import {
-  FeButton
-} from '../packages'
+import { SuppleButton } from '../packages'
 Vue.config.productionTip = false
-
-Vue.use(FeButton)
 Vue.use(ElementUI)
+Vue.use(SuppleButton)
 Vue.component('demo-block', demoBlock)
 router.afterEach(route => {
   Vue.nextTick(() => {

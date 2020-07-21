@@ -19,7 +19,7 @@
 </template>
 <script>
 export default {
-  name: 'FeButton',
+  name: 'SuppleButton',
   props: {
     type: {
       type: String,

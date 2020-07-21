@@ -1,8 +1,7 @@
 <template>
   <div class="header-model">
-    <h1 class="info">
-      通用组件库
-    </h1>
+    <img class="logo" src="../static/imgs/logo.png" alt="">
+    <span class="logo-text">SuppleUi</span>
   </div>
 </template>
 
@@ -14,18 +13,17 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.el-header {
-  position: fixed;
-  top:0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 .header-model {
-  height: 40px;
-  .info {
-    display: inline-block;
-    font-size: 14px;
-    color: #333;
-    font-weight: normal;
-  }
+  height: 80px;
+  line-height: 80px;
+  border-bottom: 1px solid #dcdfe6;
+  box-sizing: border-box;
+}
+.logo {
+  vertical-align: middle;
+}
+.logo-text {
+  color: #f65b5e;
+  margin-left: 10px;
 }
 </style>

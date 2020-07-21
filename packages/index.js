@@ -20,6 +20,5 @@ export {
   FeInput
 }
 export default {
-  install,
-  version
+  install
 }

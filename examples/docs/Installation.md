@@ -2,21 +2,22 @@
 
 ### npm 安装
 ```shell
-npm i one-piece-ui
+npm i supple-ui-components
 ```
 
 ### 使用说明
 
-你可以引入整个one-piece-ui，也可进行按需加载组件
+你可以引入整个supple-ui-components，也可进行按需加载组件
 1. 完整引入
 在 main.js 中写入以下内容：
 
 ```js
   import Vue from 'vue';
-  import FeUI from 'one-piece-ui';
+  import SuppleUiComponents from 'supple-ui-components';
+  import 'supple-ui-components/lib/theme-chalk/index.css';
   import App from './App.vue';
 
-  Vue.use(FeUI);
+  Vue.use(SuppleUiComponents);
 
   new Vue({
     el: '#app',
@@ -29,10 +30,10 @@ npm i one-piece-ui
 
 ```js
   import Vue from 'vue';
-  import {FeButton} from 'one-piece-ui';
+  import { SuppleButton } from 'supple-ui-components';
   import App from './App.vue';
 
-  Vue.use(FeButton);
+  Vue.use(SuppleButton);
 
   new Vue({
     el: '#app',

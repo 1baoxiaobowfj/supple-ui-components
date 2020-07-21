@@ -1,1 +1,27 @@
-@import './demo.scss'
+@import './demo.scss';
+
+html body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#demo-total {
+    width: 1200px;
+    margin-left: calc(50% - 600px);
+}
+
+.menu-model .el-menu {
+    border-right: 0;
+}
+.language-js {
+    line-height: 1.8;
+    font-family: Menlo,Monaco,Consolas,Courier,monospace;
+    font-size: 12px;
+    padding: 18px 24px;
+    background-color: #fafafa;
+    border: 1px solid #eaeefb;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    -webkit-font-smoothing: auto;
+}
