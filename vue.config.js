@@ -3,7 +3,7 @@ const resolve = (dir) => {
   return path.join(__dirname, dir)
 }
 module.exports = {
-  publicPath: './',
+  publicPath: '/',
   lintOnSave: false,
   productionSourceMap: false,
   outputDir: 'docs',

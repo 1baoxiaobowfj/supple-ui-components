@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import Installation from '../docs/Installation.md';
 import Button from '../docs/button.md'
+import SearchBar from '../docs/search-bar.md'
 import VueRouter from 'vue-router';
 const routes = [
   {
@@ -17,6 +18,11 @@ const routes = [
     path: '/guide/button',
     name: 'Button',
     component: Button
+  },
+  {
+    path: '/guide/searchbar',
+    name: 'SearchBar',
+    component: SearchBar
   }
 ]
 Vue.use(VueRouter)

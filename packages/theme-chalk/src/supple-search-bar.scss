@@ -1,0 +1,22 @@
+@import './mixins/mixins.scss';
+
+.wrapper.search-bar .items {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.wrapper.search-bar .items input {
+  vertical-align: bottom;
+}
+
+
+.wrapper.search-bar .label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper.search-bar .border-raduis {
+  border-radius: 5px;
+}
+

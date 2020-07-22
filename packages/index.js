@@ -1,14 +1,13 @@
 import SuppleButton from './supple-button'
-import FeInput from './input'
+import SuppleSearchBar from './supple-search-bar'
 const components = [
   SuppleButton,
-  FeInput
+  SuppleSearchBar
 ]
 const install = Vue => {
   components.forEach(Component => {
     Vue.use(Component)
   })
-
 };
 /* istanbul ignore if */
 if (typeof window !== 'undefined' && window.Vue) {
@@ -17,7 +16,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 export {
   install,
   SuppleButton,
-  FeInput
+  SuppleSearchBar
 }
 export default {
   install

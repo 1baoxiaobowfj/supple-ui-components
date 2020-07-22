@@ -20,7 +20,7 @@
           <span>通用模块</span>
         </template>
         <el-menu-item-group>
-          <el-menu-item index="/guide/input">Input</el-menu-item>
+          <el-menu-item index="/guide/searchbar">SearchBar</el-menu-item>
         </el-menu-item-group>
         <el-menu-item-group>
           <el-menu-item index="/guide/button">Button</el-menu-item>

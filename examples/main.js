@@ -9,9 +9,13 @@ import hljs from 'highlight.js';
 import '../packages/theme-chalk/src/supple-button.scss';
 // 导入组件库
 import { SuppleButton } from '../packages'
+import { SuppleSearchBar } from '../packages'
+
 Vue.config.productionTip = false
 Vue.use(ElementUI)
 Vue.use(SuppleButton)
+Vue.use(SuppleSearchBar)
+
 Vue.component('demo-block', demoBlock)
 router.afterEach(route => {
   Vue.nextTick(() => {
