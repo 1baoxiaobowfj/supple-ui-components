@@ -1,6 +1,6 @@
 {
   "name": "supple-ui-components",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "private": false,
   "main": "lib/suppleuicomponents.common.js",
   "files": [

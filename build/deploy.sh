@@ -10,4 +10,4 @@ git add -A
 git commit -m 'deploy'
 
 # 推到你仓库的 master 分支
-git push -f git@github.com:774848686/fe-ui.git master:gh-pages
+git push -f github.com/1baoxiaobowfj/supple-ui-components.git master:gh-pages
